@@ -22,6 +22,10 @@ body {
     color: #ebe9e6;
 }
 
+.intro {
+    padding: 30px;
+}
+
 img {
     max-width: 400px;
     max-height: 400px;
@@ -30,18 +34,26 @@ img {
 .container2 {
     display: flex;
     padding: 20px;
-    align-content: center;
-    background-size: cover;
+    justify-content: center;
 }
 
 #resume {
-    left: 400px;
+    font-size: 32px;
+    border: white 5px solid;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    position: relative;
+    left: 800px;
+    bottom: 100px;
+
 }
 
 #projects {
     display: flex;
     width: fit-content;
     flex-wrap: wrap;
+
 }
 
 .card {
@@ -54,5 +66,16 @@ img {
 
 fieldset {
     display: flex;
-    align-content: center;
+    justify-content: center;
+}
+
+form {
+    padding: 30px;
+}
+
+footer {
+    background-color: black;
+    color: #ebe9e6;
+    text-align: center;
+    padding: 0;
 }
