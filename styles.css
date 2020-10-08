@@ -17,6 +17,13 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.navbar {
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    z-index: 1;
+}
+
 .dark-mode {
     background-color: black;
     color: #ebe9e6;
