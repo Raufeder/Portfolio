@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Derek Raufeisen</title>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cardHeader">Projects</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#fs-frm">Contact</a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" onclick="darkMode()">Dark Mode</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+
+  <!--JUMBOTRON-->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Derek Raufeisen</h1>
+      <p class="lead">Future Developer</p>
+    </div>
+  </div>
+
+  <!--ABOUT-->
+  <div id="about">
+    <div class="container2">
+      <h1 class=>Enter Stage Right: Derek Raufeisen</h1>
+      <img src="./assets/Headshot.jpg" alt="Derek R Headshot" id="headshot">
+
+      <p class='aboutPara'>
+        Growing up, Derek excelled at numbers and problem solving. Having enjoyed creating products for colleagues, he enrolled in Eleven Fifty Academy’s Web Development program where he honed his coding skills and web development abilities.
+
+        When Derek is not at his computer, you can find him playing Ultimate Frisbee™, rock climbing, or writing a movie he promises he will finish one day.  As a freelance photographer, Derek’s clients value his creativity which is a quality he brings to Web Development.
+
+        If you are looking for originality, passion and professionalism for your web development needs, Derek will work with you to build an exceptional website that stands out from the rest.
+      </p>
+    </div>
+    <a href="./assets/Derek Raufeisen Resume.pdf" id="resume" target='blank'>Download Derek's Resume</a>
+  </div>
+
+  <br>
+
+  <!--Project Cards-->
+  <h2 id="cardHeader">Derek's Portfolio</h2>
+  <div id="projects">
+      <div class="card" id='cssCreature'>
+          <a href="https://codepen.io/Nekrono/pen/dyMeGdV" target='blank'>
+          <img src="./assets/cssCreature.png"></a>
+          <div class="cardInfo">
+              <h3>CSS Creature</h3>
+              <p>A Pac-Man photo recreated using only HTML and CSS</p>
+          </div>
+      </div>
+      <div class="card" id='nytAPI'>
+          <a href="https://raufeder.github.io/nytAPI/" target='blank'>
+          <img src="./assets/nytAPI.png"></a>
+          <div class="cardInfo">
+              <h3>New York Times</h3>
+              <p>Utilizing the New York Times API, users can search for videos of their choice</p>
+          </div>
+      </div>
+      <div class="card" id='pokemonAPI'>
+          <a href="https://raufeder.github.io/API-1/" target='blank'>
+          <img src="./assets/Pokemon.png"></a>
+          <div class="cardInfo">
+              <h3>Pokemon API</h3>
+              <p>Utilizing the PokeAPI, the user can generate a random pokemon (from Generation 1)</p>
+          </div>
+      </div>
+      <div class="card" id='staticLayout'>
+          <a href="https://raufeder.github.io/staticLayout/" target='blank'>
+          <img src="./assets/staticLayout.png"></a>
+          <div class="cardInfo">
+              <h3>Hulu Static Layout</h3>
+              <p>using HTML and CSS, this is a recreation of Hulu's landing page</p>
+          </div>
+      </div>
+      <div class="card" id='visualAirAPI'>
+          <a href="https://raufeder.github.io/airVisualAPI/" target='blank'>
+          <img src="./assets/AirVisualAPI.jpg"></a>
+          <div class="cardInfo">
+              <h3>AirVisual API</h3>
+              <p>Utilizing IQAir's API, user can look up statistics on the air quality for any supported city in the world</p>
+          </div>
+      </div>
+      <div class="card" id='futureProjects'>
+          <a href="https://github.com/Raufeder" target='blank'>
+          <img src="./assets/404.png"></a>
+          <div class="cardInfo">
+              <h3>Future Projects</h3>
+              <p>Just wait until you see this</p>
+          </div>
+      </div>
+  </div>
+
+
+  <!--FORM-->
+  <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/draufeisen1001@gmail.com" method="post">
+    <h1>CONTACT DEREK</h1>
+    <fieldset id="fs-frm-inputs">
+      <label for="full-name">Full Name</label>
+      <input type="text" name="name" id="full-name" placeholder="First and Last Name" required="">
+      <br>
+      <label for="email-address">Email Address</label>
+      <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+      <br>
+      <label for="message">Message</label>
+      <textarea rows="5" name="message" id="message" placeholder="I just wanted to talk about the weather today..." required=""></textarea>
+      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+    </fieldset>
+    <input type="submit" value="Send Message">
+  </form> 
+
+<!--BOOTSTRAP-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<!--MY SCRIPTS-->
+<script src="scripts.js"></script>
+</body>
+</html>
