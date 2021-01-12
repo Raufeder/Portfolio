@@ -24,11 +24,6 @@ body {
     z-index: 1;
 }
 
-.dark-mode {
-    background-color: black;
-    color: #ebe9e6;
-}
-
 .intro {
     padding: 30px;
 }
@@ -74,10 +69,6 @@ img {
 fieldset {
     display: flex;
     justify-content: center;
-}
-
-form {
-    padding: 30px;
 }
 
 footer {
