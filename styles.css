@@ -24,7 +24,7 @@ body {
     z-index: 1;
 }
 
-.intro {
+#intro {
     padding: 30px;
 }
 
@@ -55,7 +55,6 @@ img {
     display: flex;
     width: fit-content;
     flex-wrap: wrap;
-
 }
 
 .card {
@@ -76,4 +75,19 @@ footer {
     color: #ebe9e6;
     text-align: center;
     padding: 0;
+    width: 100%;
+}
+
+/* .zoom {
+    transition: transform 0.3s;
+} */
+
+html {
+    scroll-behavior: smooth;
+}
+
+hr {
+    margin-left: 0;
+    margin-right: 0;
+    width: 98%;
 }
