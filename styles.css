@@ -24,19 +24,14 @@ body {
     z-index: 1;
 }
 
-#intro {
-    padding: 30px;
+#about-me-container {
+    justify-content: space-around;
 }
 
-img {
-    max-width: 400px;
-    max-height: 400px;
-}
-
-.container2 {
-    display: flex;
-    padding: 20px;
-    justify-content: center;
+.about-me-text {
+    width: 50%;
+    min-width: 320px;
+    max-width: 580px;
 }
 
 #resume {
@@ -46,39 +41,12 @@ img {
     background-color: white;
     color: black;
     position: relative;
-    left: 800px;
-    bottom: 100px;
-
 }
 
 .figure-img {
     width: 200px;
     height: 200px;
-}
-
-#codingProjects {
-    display: flex;
-    width: fit-content;
-    flex-wrap: wrap;
-}
-
-#photographyProjects {
-    display: flex;
-    width: fit-content;
-    flex-wrap: wrap;
-}
-
-.card {
-    max-width: 400px;
-}
-
-.aboutPara {
-    padding: 30px;
-}
-
-fieldset {
-    display: flex;
-    justify-content: center;
+    padding: 15px;
 }
 
 footer {
@@ -88,20 +56,24 @@ footer {
     width: 100%;
 }
 
-/* .zoom {
+.zoom {
     transition: transform 0.3s;
-} */
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
 
 html {
     scroll-behavior: smooth;
 }
 
 hr {
-    margin-left: 0;
-    margin-right: 0;
     width: 98%;
 }
 
-.header {
-    text-align: center;
+#fs-frm-inputs {
+    margin-right: auto;
+    margin-left: auto;
+    place-items: center;
 }
