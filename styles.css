@@ -72,8 +72,15 @@ hr {
     width: 98%;
 }
 
-#fs-frm-inputs {
-    margin-right: auto;
-    margin-left: auto;
-    place-items: center;
+.form-content {
+    text-align: center;
+}
+
+.input-info {
+    width: 70%;
+}
+
+#submit-button {
+    margin: 15px;
+    width: 45%;
 }

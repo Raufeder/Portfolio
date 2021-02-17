@@ -47,7 +47,7 @@
   <!-- ABOUT -->
   <div class="container-fluid d-flex flex-wrap align-items-center" id="about-me-container">
     <img src="./assets/Headshot.jpg" alt="Derek R Headshot" id="headshot" />
-    <div class="text-dark about-me-text">
+    <div class="about-me-text">
       <h1 class="text-center">About Derek Raufeisen</h1>
       <p class="aboutPara">
       Growing up, Derek excelled at numbers and problem solving. Having
@@ -59,7 +59,7 @@
       Derek’s clients value his creativity which is a quality he brings to
       Web Development. If you are looking for originality, passion and
       professionalism for your web development or photography needs, Derek will work with
-      you to build an exceptional website that stands out from the rest.
+      you to build an exceptional product that stands out from the rest.
       </p>
       <a href="./assets/Derek Raufeisen Resume.pdf" id="resume" target="blank">Download Derek's Resume</a>
     </div>
@@ -198,29 +198,37 @@
 
   <hr />
   <!-- FORMSPREE -->
-<div class="container-sm p-5" id="form-container">
+<div class="container-sm p-5 " id="form-container">
   <h2 class="text-center">Contact Derek</h2>
   <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
     action="https://formspree.io/draufeisen1001@gmail.com" method="post">
     <fieldset id="fs-frm-inputs">
-      <div>
+      <div class="form-content">
         <label for="full-name" class="text-center">Full Name:</label>
       </div>
-      <input type="text" name="name" id="full-name" placeholder="First and Last Name" required="" />
-      <br>
-      <div>
-        <label for="email-address" class="text-center">Email Address:</label>
+      <div class="form-content">
+        <input type="text" name="name" id="full-name" placeholder="First and Last Name" required="" class="input-info"/>
       </div>
-      <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="" />
       <br>
-      <div>
-        <label for="message" class="text-center">Message:</label>
+      <div class="form-content">
+        <label for="email-address">Email Address:</label>
+      </div >
+      <div class="form-content">
+        <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="" class="input-info"/>
       </div>
-      <textarea rows="4" name="message" id="message" placeholder="Your message" required=""></textarea>
-      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" />
+      <br>
+      <div class="form-content">
+        <label for="message">Message:</label>
+      </div>
+      <div class="form-content">
+        <textarea rows="4" name="message" id="message" placeholder="Your message" required="" class="input-info"></textarea>
+        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" />
+      </div>
     </fieldset>
   </form>
-    <input id="submit button" type="submit" value="Send Message" />
+  <div class="form-content">
+    <input id="submit-button" type="submit" value="Send Message" />
+  </div>
 </div>
   <!-- FOOTER -->
   <footer>
