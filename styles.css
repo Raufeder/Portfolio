@@ -15,7 +15,11 @@
 body {
   background-color: #ebe9e6;
   color: black;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Lora", Courier, monospace;
+}
+
+.headers {
+  font-weight: bold;
 }
 
 .navbar {
@@ -31,8 +35,11 @@ body {
 
 .about-me-text {
   width: 50%;
-  min-width: 320px;
-  max-width: 580px;
+  min-width: 60%;
+  max-width: 60%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 #resume {
@@ -41,12 +48,13 @@ body {
   border-radius: 10px;
   background-color: white;
   color: black;
-  position: relative;
+  align-items: center;
+  justify-content: center;
 }
 
 .figure-img {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   padding: 15px;
 }
 
@@ -84,4 +92,8 @@ hr {
 #submit-button {
   margin: 15px;
   width: fill;
+}
+
+footer {
+  background-color: red;
 }
